@@ -1,25 +1,26 @@
-# Secrets (anywhere)
+# --- Secrets (any depth) ---
+.env
 **/.env
 
-# Local runtime state (anywhere)
+# --- Local runtime state (any depth) ---
+daowork.db
+daowork.db-*
 **/daowork.db
-**/daowork.db-wal
-**/daowork.db-shm
+**/daowork.db-*
 
-# Python junk
+job.json
+solution.json
+validator.json
+**/job.json
+**/solution*.json
+**/validator*.json
+
+# --- Python junk ---
+__pycache__/
 **/__pycache__/
+.venv/
 **/.venv/
 
-# Foundry build artifacts
-out/
-cache/
-
-# OS noise
-**/.DS_Store
-
-# Logs
-**/*.log
-
-# Backups
+# --- Backups / junk ---
 .bak/
-**/.bak
+**/.bak/
