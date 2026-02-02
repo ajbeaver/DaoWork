@@ -1,0 +1,18 @@
+{
+  "version": "job-spec/v1",
+
+  "type": "job_type_string",
+
+  "payload": {
+    "description": "human-readable description of the work",
+    "inputs": "any input data required to perform the work",
+    "expected_output": "what a valid solution must produce",
+    "constraints": "rules, limits, or requirements"
+  },
+
+  "bounty_wei": 0,
+
+  "min_validators": 1,
+
+  "nonce": 0
+}

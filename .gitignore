@@ -1,23 +1,25 @@
-# OS
-.DS_Store
-Thumbs.db
+# Secrets (anywhere)
+**/.env
 
-# Editors
-.vscode/
-.idea/
-*.swp
-*.swo
+# Local runtime state (anywhere)
+**/daowork.db
+**/daowork.db-wal
+**/daowork.db-shm
 
-# Logs
-*.log
+# Python junk
+**/__pycache__/
+**/.venv/
 
-# Environment
-.env
-.env.*
-
-# Solidity
+# Foundry build artifacts
 out/
 cache/
 
-tmp/
-temp/
+# OS noise
+**/.DS_Store
+
+# Logs
+**/*.log
+
+# Backups
+.bak/
+**/.bak
