@@ -2,6 +2,15 @@
 .env
 **/.env
 
+# --- Foundry / Solidity build artifacts ---
+out/
+cache/
+broadcast/
+
+**/out/
+**/cache/
+**/broadcast/
+
 # --- Local runtime state (any depth) ---
 daowork.db
 daowork.db-*
