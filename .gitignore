@@ -1,22 +1,19 @@
-# --- Secrets (any depth) ---
+# --- Secrets ---
 .env
 **/.env
 
-# --- Foundry / Solidity build artifacts ---
+# --- Foundry build/runtime artifacts ---
 out/
 cache/
 broadcast/
 
-**/out/
-**/cache/
-**/broadcast/
-
-# --- Local runtime state (any depth) ---
+# --- Local application state ---
 daowork.db
 daowork.db-*
 **/daowork.db
 **/daowork.db-*
 
+# --- Local job/work artifacts ---
 job.json
 solution.json
 validator.json
@@ -24,12 +21,17 @@ validator.json
 **/solution*.json
 **/validator*.json
 
-# --- Python junk ---
+# --- Python ---
 __pycache__/
 **/__pycache__/
+*.py[cod]
+
 .venv/
 **/.venv/
 
-# --- Backups / junk ---
+# --- OS/editor junk ---
+.DS_Store
+
+# --- Backups ---
 .bak/
 **/.bak/
